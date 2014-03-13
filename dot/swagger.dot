@@ -1,0 +1,23 @@
+digraph  {
+rankdir=BT;
+node [shape="box3d", fontsize=20];
+    db -> RDBMS [dir=back]
+    db -> MongoDB[dir=back]
+
+
+    server -> db [label="crud"]
+    server ->   db [label="query"]
+
+    server -> server [label="create json schema"]
+
+
+    server[label="   RDBMS    ",shape="box3d"]
+
+
+    client->server [label="crud"]
+    client->server [label="query"]
+    client->server [label="schema"]
+
+    client [label="JS"]
+    client -> client [label="create master detail views from schema"]
+}

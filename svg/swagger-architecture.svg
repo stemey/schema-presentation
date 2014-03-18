@@ -282,13 +282,13 @@
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        x="288.50092"
-       y="576.83771"
+       y="578.83771"
        id="text7192"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan7194"
          x="288.50092"
-         y="576.83771"
+         y="578.83771"
          style="font-size:20px">/pet/{id}</tspan></text>
     <text
        xml:space="preserve"
@@ -411,14 +411,14 @@
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="187.42191"
-       y="434.81433"
+       x="144.02052"
+       y="441.01453"
        id="text7248"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan7250"
-         x="187.42191"
-         y="434.81433"
+         x="144.02052"
+         y="441.01453"
          style="font-size:32px">java/Spring-MVC</tspan></text>
     <text
        xml:space="preserve"
@@ -434,14 +434,14 @@
     <text
        xml:space="preserve"
        style="font-size:32px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="365.68564"
-       y="385.84085"
+       x="329.51782"
+       y="380.67401"
        id="text7256"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan7258"
-         x="365.68564"
-         y="385.84085">node/restify</tspan></text>
+         x="329.51782"
+         y="380.67401">node/restify</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:32px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -477,5 +477,24 @@
        id="path8036"
        inkscape:connector-curvature="0"
        transform="translate(45.492555,40.79033)" />
+    <rect
+       style="opacity:0.98999999;fill:#ccccff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect8224"
+       width="246.97456"
+       height="78.535843"
+       x="441.27188"
+       y="396.03644" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="480.53979"
+       y="448.67139"
+       id="text8226"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan8228"
+         x="480.53979"
+         y="448.67139"
+         style="font-size:32px">swagger lib</tspan></text>
   </g>
 </svg>

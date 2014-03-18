@@ -724,3 +724,14 @@ p.footnote  {
     float:right;
     margin-top:100px;
 }
+
+
+/* end step */
+
+#end.step.active.present {
+    z-index: -3;
+}
+
+#end.step.future {
+    z-index: -3;
+}

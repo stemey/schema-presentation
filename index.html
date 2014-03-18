@@ -40,11 +40,11 @@
     <div id="agenda" class="step" data-x="-3000" data-y="-1500">
         <h2>Json schemas</h2>
         <ul>
-            <li>Validierung</li>
-            <li>Json Rest Api Dokumentation</li>
+            <li>Validation</li>
+            <li>Json Rest Api Spezification</li>
             <li>Administrative Front-Ends</li>
         </ul>
-        <p class="footnote">Stefan Meyer, 17.3.014</p>
+        <p class="footnote">Stefan Meyer, 17.3.2014</p>
     </div>
 
     <div class="step slide" data-x="-2000" data-y="-1500">
@@ -73,55 +73,60 @@
         </div>
         <div style="clear:both"></div>
         <br/>
-        <span class="footnote"><sup>*</sup>weitere schemas:  gform, mongoose, ..</span>
+        <span class="footnote"><sup>*</sup>more schema formats:  gform, mongoose, ..</span>
     </div>
 
 
-    <div class="step" data-x="-1000" data-y="-1500" >
-        <h2>Json Rest Api</h2>
+    <div class="step" data-x="-1000" data-y="-1000" >
+        <h2>Specification <br/>Json Rest Api</h2>
         <ul>
-            <li>Dokumentation von Url, Verb, Parameter und Rückgabetypen</li>
-            <li>Test-Client zum Testen der API ohne Anwendung</li>
+            <li>url</li>
+            <li>verb</li>
+            <li>parameters</li>
+            <li>return types</li>
         </ul>
     </div>
 
-    <div class="step" data-x="0" data-y="-1500">
+    <div class="step" data-x="0" data-y="-1000">
         <h2>Swagger</h2>
         <ul>
-            <li>Spezifikation einer Rest API</li>
-            <li>wie WSDL oder WADL</li>
-            <li>generischer Api-Client wie SoapUI</li>
-            <li>Viele Bibliotheken für Express, Spring MVC, Ruby u.a.</li>
+            <li>Spezification of Rest API</li>
+            <li>like WSDL</li>
+            <li>Client for Documentation</li>
+            <li>Client for testing like SoapUI</li>
+            <li>Many libraries for Express, Spring MVC, Ruby,..</li>
         </ul>
     </div>
 
-    <div id="swagger" class="step" data-x="1000" data-y="-1500">
+    <div id="swagger" class="step" data-x="1000" data-y="-1000">
         <div style="height:1100px;background: url(svg/swagger-architecture.svg);">
         </div>
     </div>
 
-    <div data-ref="#swagger" class="step" data-x="1000" data-y="-1500" data-scale="0.55">
+    <div data-ref="#swagger" class="step" data-x="1000" data-y="-1000" data-scale="0.55">
     </div>
 
-    <div class="step" data-x="2000" data-y="-1500">
+    <div data-ref="#swagger" class="step" data-x="1000" data-y="-1000">
+    </div>
+
+    <div class="step" data-x="2000" data-y="-2000">
         <h2 >Administration</h2>
         <ul>
-            <li>Administration für persistente Daten</li>
-            <li>Nutzer sind Berater, Kunden</li>
-            <li style="text-decoration: line-through">Generischer Datenbankbrowser</li>
-            <li>Aufwand muss möglichst klein sein</li>
+            <li>Administration for persistent data</li>
+            <li>User are Consultants</li>
+            <li>Should be inexpensive.</li>
         </ul>
     </div>
 
-    <div class="step" data-x="3000" data-y="-1500">
-        <h2>Lösung</h2>
+    <div class="step" data-x="3000" data-y="-2000">
+        <h2>Administration</h2>
         <ul>
-            <li>Generieren des UI anhand von existierenden Metadaten</li>
-            <li>Java-Klassen, Datenbank-Schema, Mongoose-Schema, ..</li>
+            <li>UI generation based on existing meta data</li>
+            <li>Java classes,  database schema ..</li>
         </ul>
     </div>
 
-    <div id="architecture" class="step" data-x="4000" data-y="-1500">
+    <div id="architecture" class="step" data-x="4000" data-y="-2000">
         <div style="height:1100px;background: url(svg/gform-architecture.svg);">
         </div>
     </div>
@@ -133,13 +138,10 @@
        - Bereitzustellen: rest services for crud, query und statische metasaten
     -->
 
-    <div class="step" data-x="4000" data-y="-1550" data-scale="0.45" data-ref="#architecture">
+    <div class="step" data-x="4000" data-y="-2050" data-scale="0.45" data-ref="#architecture">
     </div>
 
-    <div class="step" data-x="4000" data-y="-1400" data-scale="0.75" data-ref="#architecture">
-    </div>
-
-    <div class="step" data-x="4000" data-y="-1500" data-ref="#architecture">
+    <div class="step" data-x="4000" data-y="-2000" data-ref="#architecture">
     </div>
 
     <div class="step slide" data-x="5000" data-y="-1500">
@@ -167,7 +169,7 @@
     <div class="step slide" data-x="6000" data-y="-1500">
         <p>Recursive data structures</p>
 
-        <div style="width:45%; margin:2%;display: 'inline-block'; float: left">
+        <div style="width:52%; margin:2%;display: 'inline-block'; float: left">
           <pre><code>
 {
     'type' : 'object',
@@ -179,7 +181,7 @@
           </code></pre>
 
         </div>
-        <div  style="width:45%; margin:2%;display: 'inline-block'; float: left">
+        <div  style="width:38%; margin:2%;display: 'inline-block'; float: left">
           <pre><code>
 {
     'name': "Willi",
@@ -198,37 +200,8 @@
         </div>
     </div>
 
+
     <div class="step slide" data-x="7000" data-y="-1500">
-        <p>referencing external json documents</p>
-
-        <div style="width:60%; margin:2%;display: 'inline-block'; float: left">
-          <pre><code>
-{
-    'type' : 'object',
-    'properties': {
-        'name' : {'type':'string'}
-        'friendId' : {'type' : 'number'}
-    },
-    'links': {
-        'rel':'friend',
-        'href':'/people/{friendId}'
-    }
-}
-          </code></pre>
-
-        </div>
-        <div  style="width:30%; margin:2%;display: 'inline-block'; float: left">
-          <pre><code>
-{
-    'name': 'Willi',
-    'friendId': 5
-}
-          </code></pre>
-        </div>
-    </div>
-
-
-    <div class="step slide" data-x="8000" data-y="-1500">
         <p>type discriminator in <b>gform schema</b></p>
 
         <div style="width:60%; margin:2%;display: 'inline-block'; float: left">
@@ -238,12 +211,10 @@
 'groups': [
     {
         'code':'Car',
-        'attributes':[
-            {'code':'name', 'type':'string'}]
+        'attributes':[...]
     },{
         'code':'Truck',
-        'attributes':[
-            {'code':'size', 'type':'int'}]
+        'attributes':[...]
     }
 ]}
 </code></pre>
@@ -257,23 +228,30 @@
 }
           </code></pre>
         </div>
+        <div  style="width:30%; margin:2%;display: 'inline-block'; float: left">
+          <pre><code>
+{
+    '__type': 'Truck',
+    'size': '5000'
+}
+          </code></pre>
+        </div>
     </div>
 
 
-    <div class="step" data-x="9000" data-y="-1500">
-        <h2>Schema describing schema</h2>
-        <p>Generated UI is a Formbuilder</p>
-        <p>Use case: tools</p>
-        <p>Example: CMS</p>
+    <div id="end" class="step" data-x="2000" data-y="-1500" data-scale="10">
+        <h3>Thanks</h3>
+        <p class="footnote">
+            <br/>
+            <br/>
+            <a href="http://ww.toobop.net">toobop.net</a><br/>
+            <a href="htp://github.com/stemey">github.com/stemey</a><br/>
 
+        </p>
     </div>
 
 
 
-
-
-    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
-    </div>
 
 </div>
 
